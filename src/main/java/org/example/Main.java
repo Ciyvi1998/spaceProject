@@ -97,13 +97,15 @@ public class Main {
 
     public static void calculateMaximumTransferredMoneyInOneMonth(String[] sortedTransfersDates, SortedMap<String, Double> sortedMap) {
         double maximumTransferredMoney = sortedMap.get(sortedTransfersDates[0]);
+        String month = sortedTransfersDates[0];
         for (int i = 1; i < sortedTransfersDates.length; i++) {
             if (sortedMap.get(sortedTransfersDates[i]) > maximumTransferredMoney) {
                 maximumTransferredMoney = sortedMap.get(sortedTransfersDates[i]);
+                month = sortedTransfersDates[i];
             }
         }
 
         System.out.println("####################### TASK 2 #######################");
-        System.out.println("Maximum transferred money amount in one month : " + maximumTransferredMoney);
+        System.out.println("Maximum transferred money amount in one month : " +month + " : " + maximumTransferredMoney);
     }
 }

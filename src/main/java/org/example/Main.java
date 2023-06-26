@@ -106,6 +106,6 @@ public class Main {
         }
 
         System.out.println("####################### TASK 2 #######################");
-        System.out.println("Maximum transferred money amount in one month : " +month + " : " + maximumTransferredMoney);
+        System.out.println("Maximum transferred money amount in one month : " + month + " : " + maximumTransferredMoney);
     }
 }
